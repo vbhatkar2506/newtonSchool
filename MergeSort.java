@@ -14,9 +14,9 @@ class MergeSort
         int R[] = new int[n2];
  
         /*Copy data to temp arrays*/
-        for (int i = 0; i < n1; ++i)
+        for (int i = 0; i < n1; i++)
             L[i] = arr[l + i];
-        for (int j = 0; j < n2; ++j)
+        for (int j = 0; j < n2; j++)
             R[j] = arr[m + 1 + j];
  
         /* Merge the temp arrays */
@@ -74,7 +74,7 @@ class MergeSort
     static void printArray(int arr[], int n)
     {
         
-        for (int i = 0; i < n; ++i)
+        for (int i = 0; i < n; i++)
             System.out.print(arr[i] + " ");
         System.out.println();
     }
