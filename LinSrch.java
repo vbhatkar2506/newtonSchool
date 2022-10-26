@@ -22,8 +22,7 @@ class LinSrch
          System.out.print(i+" ");  
          flag = true;
          // break;  
-      }    
-
+      }
     } 
    if (flag == false)  /* Element to search isn't present */  
    {
