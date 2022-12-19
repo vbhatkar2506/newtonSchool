@@ -16,18 +16,18 @@ class trappingRainWater
             right[N-1] = arr[N-1];
             for(int i=1;i<N;i++)
             {
-                left[i] = Math.max(left[i-1], arr[i]);
+                left[i] = Math.max(left[i-1],arr[i]);
             }
-            for(int i = N-2;i >= 0;i--)
+            for(int i=N-2;i>=0;i--)
             {
-                right[i] = Math.max(right[i+1], arr[i]);
+                right[i] = Math.max(right[i+1],arr[i]);
             }
-            int ans = 0;
-            for(int i=0;i<N;i++)
-            {           
-                ans += Math.min(left[i], right[i]) - arr[i];
+            int sum = 0;
+            for(int i = 0;i<N;i++)
+            {
+                sum += Math.min(left[i],right[i]) - arr[i];
             }
-            System.out.print(ans);
+            System.out.print(sum);
         }
     }
 }
